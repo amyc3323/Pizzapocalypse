@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6890c0faba8e09d4f83990f0dae80b85, type: 3}
+  m_Name: Tomato
+  m_EditorClassIdentifier: 
+  ingredientName: Tomato
+  icon: {fileID: 21300000, guid: e7be59e7b6012427bb4109ed0a421270, type: 3}
+  draggedIcon:
+  - {fileID: 21300000, guid: 5412bfd11aa344750bc05c0d0958c991, type: 3}
+  - {fileID: 21300000, guid: 23557d7ff2c5c9144bca84a9de92e14d, type: 3}
+  - {fileID: 21300000, guid: 501d833ab708c9945ab87eac0304f7f6, type: 3}
+  minPrice: 3
+  maxPrice: 6
+  benefits:
+  - {fileID: 11400000, guid: 7b0f513bdae199140a258b400a13a2a6, type: 2}
+  trueOrder: 0
+  description: Customers who order this topping tend to be more patient. Dramatically
+    increases time when delivering.

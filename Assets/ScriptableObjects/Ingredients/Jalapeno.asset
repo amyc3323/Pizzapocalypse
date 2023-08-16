@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6890c0faba8e09d4f83990f0dae80b85, type: 3}
+  m_Name: Jalapeno
+  m_EditorClassIdentifier: 
+  ingredientName: Jalapeno
+  icon: {fileID: 21300000, guid: 47e420814c7995f47be9dcb1da52b1ba, type: 3}
+  draggedIcon:
+  - {fileID: 21300000, guid: 0a68c4f4e5963c741906fc0d8e6152bf, type: 3}
+  - {fileID: 21300000, guid: d4c5071fcc367c44caf9cefb957eca68, type: 3}
+  - {fileID: 21300000, guid: 3f49d2cc777e3e04b91689ee18e3de6c, type: 3}
+  minPrice: 1
+  maxPrice: 2
+  benefits:
+  - {fileID: 11400000, guid: 532546691e35c0d42bfa9f746efed7f2, type: 2}
+  trueOrder: 11
+  description: This spicy ingredient increases your speed dramatically.

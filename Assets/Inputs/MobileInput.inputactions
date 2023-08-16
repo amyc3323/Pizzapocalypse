@@ -1,0 +1,40 @@
+{
+    "name": "MobileInput",
+    "maps": [
+        {
+            "name": "Driving",
+            "id": "c7c882f5-4861-4749-a6a3-3cdd12102689",
+            "actions": [
+                {
+                    "name": "Joystick",
+                    "type": "Value",
+                    "id": "9b4e2775-1d86-480d-b26f-62c1fbcd6d3f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ee4773de-df9a-4b55-a8dc-0b4c26ee1f0c",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player",
+                    "action": "Joystick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Player",
+            "bindingGroup": "Player",
+            "devices": []
+        }
+    ]
+}

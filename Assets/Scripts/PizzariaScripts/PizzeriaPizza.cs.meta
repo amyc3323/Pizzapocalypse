@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 027ecfce13cf78147b9f6fa4ce26603e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dummyType: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - pizzaIngredientPrefab: {instanceID: 0}
+  - cookingSound: {fileID: 8300000, guid: f91b0516428424cd7b5a1534fd6abe8b, type: 3}
+  - finishCookingSound: {fileID: 8300000, guid: 1b83bddd3e6e547f1a77d47c5a792768, type: 3}
+  - dummyDough: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

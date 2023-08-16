@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8ba1e25acacfa1d4d9f68e4893f26ac9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ingredient: {instanceID: 0}
+  - iconImage: {instanceID: 0}
+  - pizzaIngredientPrefab: {instanceID: 0}
+  - dropSound: {fileID: 8300000, guid: 9efce25599dda451e9476100e55eb89e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

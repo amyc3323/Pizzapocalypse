@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6890c0faba8e09d4f83990f0dae80b85, type: 3}
+  m_Name: Basil
+  m_EditorClassIdentifier: 
+  ingredientName: Basil
+  icon: {fileID: 21300000, guid: f658a3c39294d4748ae054b55e912202, type: 3}
+  draggedIcon:
+  - {fileID: 21300000, guid: d29e162b60400fc4d8be999f5e37213f, type: 3}
+  - {fileID: 21300000, guid: 92002526c070cfc42ae24b7da5dde4a5, type: 3}
+  - {fileID: 21300000, guid: 8bd0004d5aba2dc4fadce49080da14ab, type: 3}
+  minPrice: 2
+  maxPrice: 4
+  benefits:
+  - {fileID: 11400000, guid: fe5acbfb841824a42ac0998d3cfa78b6, type: 2}
+  - {fileID: 11400000, guid: b032aa4afb137b64a953fe9f996ee661, type: 2}
+  trueOrder: 7
+  description: This herb grants you bonus reputation and time when delivering orders.

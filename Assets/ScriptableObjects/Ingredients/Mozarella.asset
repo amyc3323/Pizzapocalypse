@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6890c0faba8e09d4f83990f0dae80b85, type: 3}
+  m_Name: Mozarella
+  m_EditorClassIdentifier: 
+  ingredientName: Mozarella
+  icon: {fileID: 21300000, guid: 0cf51d7060aa23744bf528454b1c4ec7, type: 3}
+  draggedIcon:
+  - {fileID: 21300000, guid: b818a920507b1eb4eb95725919d5f920, type: 3}
+  - {fileID: 21300000, guid: 32704451bbfb46649b55d45af0a3e74c, type: 3}
+  - {fileID: 21300000, guid: a27d57f7b4fb5784eb9aa9121c36d9da, type: 3}
+  minPrice: 5
+  maxPrice: 10
+  benefits:
+  - {fileID: 11400000, guid: 414986b16d96b4b4795d7e0c480404bf, type: 2}
+  trueOrder: 2
+  description: Allows you to fit one more pizza onto your bike.
