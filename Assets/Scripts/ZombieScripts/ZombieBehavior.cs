@@ -270,6 +270,7 @@ public class ZombieBehavior : MonoBehaviour
             // fast enough to kill zombie
             if (pizzaRB.velocity.sqrMagnitude > sqrMinSpeedToCrush)
             {
+                PlayerScript.instance.AddBoost(0.1f);
                 Die();
             }
             else // eat the pizza!
