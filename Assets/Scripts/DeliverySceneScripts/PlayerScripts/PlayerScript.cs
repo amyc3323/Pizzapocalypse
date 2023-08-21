@@ -226,7 +226,7 @@ public class PlayerScript : MonoBehaviour
         }
         else
             mult = 1;
-        if (true|| !isDrifting)rb2D.AddForce(speedMultiplier*inputVector.y*(1+velocityToExtraForce.Evaluate(rb2D.velocity.magnitude))*((inputVector.y<0)?0f:1)*transform.up*accelerationFactor * mult * (isDrifting ? 0.1f : 1f) * (1 / rb2D.mass));
+        if (true|| !isDrifting)rb2D.AddForce(speedMultiplier*inputVector.y*(1+velocityToExtraForce.Evaluate(rb2D.velocity.magnitude))*((inputVector.y<0)?0f:1)*transform.up*accelerationFactor * mult * (isDrifting ? 0.1f : 1f) * (rb2D.mass));
         
     }
     private void KillOrthogonalVelocity()
