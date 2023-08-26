@@ -18,8 +18,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3f1eb9c03f7ca104a9950dbd4e98ef51, type: 3}
   - {fileID: 21300000, guid: f5880153ca56571479d38db207b560b6, type: 3}
   - {fileID: 21300000, guid: 5262ff6d083110c41a296ffb156eed9f, type: 3}
-  minPrice: 10
-  maxPrice: 20
+  minPrice: 4
+  maxPrice: 8
   benefits:
   - {fileID: 11400000, guid: b5efb0eaacded6548b9512c0072477c1, type: 2}
   trueOrder: 3

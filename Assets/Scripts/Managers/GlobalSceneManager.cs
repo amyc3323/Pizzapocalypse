@@ -50,6 +50,9 @@ public class GlobalSceneManager : MonoBehaviour
     {
         int[] scores = GetHighScores();
         int cVal = score;
+        int money = PlayerPrefs.GetInt("Money");
+        money += score;
+        PlayerPrefs.SetInt("Money", money);
         for(int i = 0; i < 10; i++)
         {
             if (cVal > scores[i]) { int tmp = scores[i];scores[i] = cVal;cVal = tmp; }

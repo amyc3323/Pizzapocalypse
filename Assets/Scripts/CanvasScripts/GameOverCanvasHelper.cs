@@ -10,6 +10,7 @@ public class GameOverCanvasHelper : MonoBehaviour
     public TMP_Text moneyText;
     public TMP_Text timeText;
     public TMP_Text pizzaText;
+    public TMP_Text failedText;
     public void Awake()
     {
         instance = this;
@@ -20,6 +21,7 @@ public class GameOverCanvasHelper : MonoBehaviour
         moneyText.text = GameManager.instance.money + "$";
         timeText.text = ConvertToTime();
         pizzaText.text = GameManager.instance.finishedDeliveries.ToString();
+        failedText.text = GameManager.instance.failedDeliveries.ToString();
     }
     public string ConvertToTime()
     {

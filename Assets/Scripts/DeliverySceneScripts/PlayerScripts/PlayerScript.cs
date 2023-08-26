@@ -78,6 +78,8 @@ public class PlayerScript : MonoBehaviour
 
     [Header("Buff Multipliers")]
     public float boostMultiplier=1f;
+    public float boostPowerMultiplier = 1f;
+
     public float speedMultiplier=1f;
     // Start is called before the first frame update
     private void Awake()
@@ -220,7 +222,7 @@ public class PlayerScript : MonoBehaviour
         if (inputVector.magnitude < 0.1f) { rb2D.velocity *= 0.9f; }
         float mult;
         if (boostPressed && boostMeter != 0) {
-            mult = boostMult;
+            mult = boostMult*boostPowerMultiplier;
             boostMeter -= boostDecrease * 0.02f*1.5f; // 0.2f is basically deltaTime for Fixed update
             boostMeter = Mathf.Clamp(boostMeter, 0, 1);
         }

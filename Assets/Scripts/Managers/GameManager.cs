@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float originalDeliveryTime=20;
     public int finishedDeliveries=0;
     private static int finishedDeliveriesUnit=5;
+    public int failedDeliveries = 0;
     [SerializeField]private int reputation;
     [SerializeField] private int reputationLostPerDelivery = 20;
 
@@ -95,6 +96,7 @@ public class GameManager : MonoBehaviour
     }
     public void FailedDelivery()
     {
+        failedDeliveries++;
         reputation -= reputationLostPerDelivery;
         if (reputation <= 0)
         {
