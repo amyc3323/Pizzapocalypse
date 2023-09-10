@@ -6,7 +6,7 @@ public class ZombiePool : MonoBehaviour
 {
     public static ZombiePool instance;
     public List<GameObject> pool;
-    public GameObject zombieObject, zombieChefObject;
+    public GameObject[] zombieVariations;
     public int poolCount;
     public float velocityCompMin, velocityCompMax; // component velocity min and max
     public float minSqrPartSpeed;
@@ -20,7 +20,7 @@ public class ZombiePool : MonoBehaviour
         for (int i = 0; i < poolCount; i++)
         {
             // mod 2 to get half half split of zombie types
-            temp = Instantiate((i % 2 == 0) ? zombieObject : zombieChefObject);
+            temp = Instantiate(zombieVariations[i % zombieVariations.Length]);
             temp.SetActive(false);
 
             pool.Add(temp);

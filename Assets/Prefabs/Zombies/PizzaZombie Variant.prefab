@@ -1,0 +1,291 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8170571541952012084
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: idleSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b60156405e4d8ff49aa34a418251072a, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[0].sprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[1].sprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[2].sprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[3].sprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[4].sprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[5].sprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[6].sprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[7].sprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[0].sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 1586426836, guid: dbfac48daacdac740a3bd3d38b0c0373, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[0].sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -965468538, guid: dbfac48daacdac740a3bd3d38b0c0373, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[0].sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 1420992335, guid: dbfac48daacdac740a3bd3d38b0c0373, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[0].sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -1116993007, guid: dbfac48daacdac740a3bd3d38b0c0373, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[0].sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -1350969504, guid: dbfac48daacdac740a3bd3d38b0c0373, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[0].sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: -522013294, guid: dbfac48daacdac740a3bd3d38b0c0373, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[1].sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -348060836, guid: a07a92696db718d4eb2dd825c46b6b21, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[1].sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -986684805, guid: a07a92696db718d4eb2dd825c46b6b21, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[1].sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 581698448, guid: a07a92696db718d4eb2dd825c46b6b21, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[1].sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -893108511, guid: a07a92696db718d4eb2dd825c46b6b21, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[1].sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 500995512, guid: a07a92696db718d4eb2dd825c46b6b21, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[1].sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 1937477086, guid: a07a92696db718d4eb2dd825c46b6b21, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[2].sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -974365202, guid: db96842d22c4f8e4faaf4c15838dde35, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[2].sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -364777902, guid: db96842d22c4f8e4faaf4c15838dde35, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[2].sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 473693510, guid: db96842d22c4f8e4faaf4c15838dde35, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[2].sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -1918803015, guid: db96842d22c4f8e4faaf4c15838dde35, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[2].sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 1105612039, guid: db96842d22c4f8e4faaf4c15838dde35, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[2].sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: -1297647752, guid: db96842d22c4f8e4faaf4c15838dde35, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[3].sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 235769636, guid: 4e9484fca1aa78347a3d97423e414983, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[3].sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 1693025923, guid: 4e9484fca1aa78347a3d97423e414983, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[3].sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 1875960427, guid: 4e9484fca1aa78347a3d97423e414983, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[3].sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -2128443406, guid: 4e9484fca1aa78347a3d97423e414983, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[3].sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 1869171427, guid: 4e9484fca1aa78347a3d97423e414983, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[3].sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 73311015, guid: 4e9484fca1aa78347a3d97423e414983, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[4].sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -1466656627, guid: 6d11226b052d55b41b62622641dcdcb5, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[4].sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 843926457, guid: 6d11226b052d55b41b62622641dcdcb5, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[4].sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -481465692, guid: 6d11226b052d55b41b62622641dcdcb5, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[4].sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -1763058893, guid: 6d11226b052d55b41b62622641dcdcb5, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[4].sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 1040433228, guid: 6d11226b052d55b41b62622641dcdcb5, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[4].sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 2020112113, guid: 6d11226b052d55b41b62622641dcdcb5, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[5].sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -471811163, guid: a64967acdc22e104ca4e7f16e14aeb4c, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[5].sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 495130915, guid: a64967acdc22e104ca4e7f16e14aeb4c, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[5].sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 936082987, guid: a64967acdc22e104ca4e7f16e14aeb4c, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[5].sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 1566978412, guid: a64967acdc22e104ca4e7f16e14aeb4c, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[5].sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 16478804, guid: a64967acdc22e104ca4e7f16e14aeb4c, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[5].sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: -367856571, guid: a64967acdc22e104ca4e7f16e14aeb4c, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[6].sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 1651533791, guid: 3f11493d33a9214469b2d60f939c6be8, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[6].sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 775337724, guid: 3f11493d33a9214469b2d60f939c6be8, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[6].sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -1838882234, guid: 3f11493d33a9214469b2d60f939c6be8, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[6].sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 1880484521, guid: 3f11493d33a9214469b2d60f939c6be8, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[6].sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -2103038988, guid: 3f11493d33a9214469b2d60f939c6be8, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[6].sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 1165401846, guid: 3f11493d33a9214469b2d60f939c6be8, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[7].sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -1787942987, guid: be42314e9c7dadd4698763674663a709, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[7].sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -693761834, guid: be42314e9c7dadd4698763674663a709, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[7].sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 559614651, guid: be42314e9c7dadd4698763674663a709, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[7].sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -1854841238, guid: be42314e9c7dadd4698763674663a709, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[7].sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 1515954045, guid: be42314e9c7dadd4698763674663a709, type: 3}
+    - target: {fileID: 5153953532797467922, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: zombieSprites.Array.data[7].sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: -655696977, guid: be42314e9c7dadd4698763674663a709, type: 3}
+    - target: {fileID: 6543996695160056008, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_Name
+      value: PizzaZombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056012, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b60156405e4d8ff49aa34a418251072a, type: 3}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.740105
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.335999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543996695160056019, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be34a2eb7e53c4adba32585cd8a82080, type: 3}
