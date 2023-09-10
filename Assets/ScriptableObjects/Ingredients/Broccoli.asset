@@ -21,8 +21,7 @@ MonoBehaviour:
   minPrice: 5
   maxPrice: 10
   benefits:
-  - {fileID: 11400000, guid: 24b2dbf7f374c1546b626235a62d990d, type: 2}
-  - {fileID: 11400000, guid: 80b17fabbe48da64a9f04d6a896a9aa5, type: 2}
+  - {fileID: 11400000, guid: 622c0b25954c6604f8102e7240c08f11, type: 2}
   - {fileID: 11400000, guid: f245f78da91c71341a76662fa619ae44, type: 2}
   trueOrder: 10
   description: "Spoils quickly. You\u2019ll gain more boost but have less time to

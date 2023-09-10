@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
         money += amt;
         GameCanvasManager.instance.UpdateMoney(money);
     }
+
     private void SpawnZombies()
     {
 

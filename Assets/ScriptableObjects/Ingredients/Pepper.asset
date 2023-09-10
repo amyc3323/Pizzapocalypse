@@ -21,6 +21,6 @@ MonoBehaviour:
   minPrice: 3
   maxPrice: 6
   benefits:
-  - {fileID: 11400000, guid: 622c0b25954c6604f8102e7240c08f11, type: 2}
+  - {fileID: 11400000, guid: 80b17fabbe48da64a9f04d6a896a9aa5, type: 2}
   trueOrder: 5
   description: Dramatically increases the amount of boost gained from all sources.

@@ -60,7 +60,19 @@ public class GlobalSceneManager : MonoBehaviour
         SaveScores(scores);
     }
 
-    // Start is called before the first frame update
+    public int GetMoney()
+    {
+        return PlayerPrefs.GetInt("Money");
+
+    }
+    public bool UseMoney(int amt)
+    {
+        int money = GetMoney();
+        if (amt > money) return false;
+        PlayerPrefs.SetInt("Money",money-amt);
+        return true;
+    }
+        // Start is called before the first frame update
     void Awake()
     {
         if (instance != null)

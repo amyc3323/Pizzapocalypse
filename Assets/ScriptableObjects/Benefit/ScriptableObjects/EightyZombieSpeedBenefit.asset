@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abb23f94f7bcad64694ff490f8e874ae, type: 3}
   m_Name: EightyZombieSpeedBenefit
   m_EditorClassIdentifier: 
-  speedMulti: 0.8
+  speedMulti: 0.6
