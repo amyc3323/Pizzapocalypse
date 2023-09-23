@@ -6,6 +6,7 @@ using UnityEngine;
 public class IngredientScriptableObject : ScriptableObject
 {
     public string ingredientName;
+    public bool isMeat;
     public Sprite icon;
     public Sprite[] draggedIcon = new Sprite[3];
     public int minPrice;

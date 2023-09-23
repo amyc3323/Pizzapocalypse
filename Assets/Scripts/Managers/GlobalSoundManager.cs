@@ -119,4 +119,19 @@ public class GlobalSoundManager : MonoBehaviour
     {
         musicAudioSource.volume = musicVolume * globalVolume * 2;
     }
+
+    public void PlayUIClick()
+    {
+        playSFX(uiClick);
+    }
+
+    public void PlayUIOpen()
+    {
+        playSFX(uiOpen);
+    }
+
+    public void PlayUIClose()
+    {
+        playSFX(uiClose);
+    }
 }

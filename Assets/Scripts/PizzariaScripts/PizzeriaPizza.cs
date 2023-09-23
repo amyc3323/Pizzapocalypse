@@ -114,8 +114,8 @@ public class PizzeriaPizza : MonoBehaviour//, IPointerDownHandler, IPointerUpHan
     }
     public void Clear()
     {
-        GlobalSoundManager.instance.playSFX(GlobalSoundManager.instance.uiClick);
-        foreach(Ingredient ig in ingredients)
+        GlobalSoundManager.instance.PlayUIClick();
+        foreach (Ingredient ig in ingredients)
         {
             if (ig.type.trueOrder < 0) continue;
             IngredientManager.instance.AddIngredient(ig);
@@ -125,7 +125,7 @@ public class PizzeriaPizza : MonoBehaviour//, IPointerDownHandler, IPointerUpHan
 
     public void StartCookCoroutine()
     {
-        GlobalSoundManager.instance.playSFX(GlobalSoundManager.instance.uiClick);
+        GlobalSoundManager.instance.PlayUIClick();
         StartCoroutine(_CookCoroutine());
     }
     public IEnumerator _CookCoroutine()

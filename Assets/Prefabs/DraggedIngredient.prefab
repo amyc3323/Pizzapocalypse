@@ -54,7 +54,8 @@ MonoBehaviour:
   ingredient: {fileID: 0}
   iconImage: {fileID: 250743336959809165}
   pizzaIngredientPrefab: {fileID: 1365648668032189847, guid: 17f1d70e2a6378542b6afbd7f30aced3, type: 3}
-  dropSound: {fileID: 8300000, guid: 9efce25599dda451e9476100e55eb89e, type: 3}
+  dropVegSound: {fileID: 8300000, guid: 7d6004097ef1b4d87a2bfb55df672dd7, type: 3}
+  dropMeatSound: {fileID: 8300000, guid: f40be7c8a5e224c70a61fe956c42a666, type: 3}
   pizzaRadius: 200
 --- !u!222 &1030150694533989233
 CanvasRenderer:

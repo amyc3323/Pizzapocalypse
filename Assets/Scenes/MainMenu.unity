@@ -4459,6 +4459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlobalSoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4104644876458128626, guid: 2eff6370c67dfd04db452b4bc2838f11, type: 3}
+      propertyPath: musicClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 30bca2584e31c4e63ae0cfa0bddb4d63, type: 3}
     - target: {fileID: 4104644876458128627, guid: 2eff6370c67dfd04db452b4bc2838f11, type: 3}
       propertyPath: m_RootOrder
       value: 4

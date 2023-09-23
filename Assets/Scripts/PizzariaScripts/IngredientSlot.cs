@@ -46,7 +46,7 @@ public class IngredientSlot : MonoBehaviour,IPointerDownHandler
     }
     public void OnPointerDown(PointerEventData pointerEventData)
     {
-        GlobalSoundManager.instance.playSFX(GlobalSoundManager.instance.uiClick);
+        GlobalSoundManager.instance.PlayUIClick();
         HoverboxHelper.instance.UpdateIngredient(ingredient);
         if (UseAmount(1)) {
             DraggedIngredient di = Instantiate(draggedIngredient, Input.mousePosition, Quaternion.identity);

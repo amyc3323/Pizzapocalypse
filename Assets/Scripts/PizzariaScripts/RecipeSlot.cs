@@ -85,7 +85,7 @@ public class RecipeSlot : MonoBehaviour
     }
     public void SetDisplay()
     {
-        GlobalSoundManager.instance.playSFX(GlobalSoundManager.instance.uiClick);
+        GlobalSoundManager.instance.PlayUIClick();
         CookbookManager.instance.currentSelectedSlot = id;
         cookbookDisplay.UpdateDisplayedPizza(pizzaType, ingredients);
         currentSelected = id;

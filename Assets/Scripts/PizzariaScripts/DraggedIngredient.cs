@@ -8,7 +8,8 @@ public class DraggedIngredient : MonoBehaviour//, IPointerUpHandler
     public IngredientScriptableObject ingredient;
     public Image iconImage;
     public GameObject pizzaIngredientPrefab;
-    [SerializeField] private AudioClip dropSound;
+    [SerializeField] private AudioClip dropVegSound;
+    [SerializeField] private AudioClip dropMeatSound;
 
     public int pizzaRadius = 100;
     public void ChangeIngredient(IngredientScriptableObject newIngredient)
@@ -26,7 +27,18 @@ public class DraggedIngredient : MonoBehaviour//, IPointerUpHandler
     {
         if (!PizzeriaPizza.instance.isCooking && (PizzeriaPizza.instance.transform.position-transform.position).sqrMagnitude< pizzaRadius* pizzaRadius&&PizzeriaPizza.instance.ingredients.Count<4)
         {
-            GlobalSoundManager.instance.playSFX(dropSound);
+            GlobalSoundManager.instance.playSFX(dropVegSound);
+            /*
+             * if (isMeat)
+             * {
+             *     GlobalSoundManager.instance.playSFX(dropMeatSound);
+             * }
+             * else
+             * {
+             *     GlobalSoundManager.instance.playSFX(dropVegSound);
+             * }
+             * 
+             */
             GameObject visualIngredient = Instantiate(pizzaIngredientPrefab, PizzeriaPizza.instance.transform);
             visualIngredient.GetComponent<Image>().sprite = iconImage.sprite;
             PizzeriaPizza.instance.AddIngredient(new Ingredient(ingredient, 1), visualIngredient.GetComponent<RectTransform>()) ;
