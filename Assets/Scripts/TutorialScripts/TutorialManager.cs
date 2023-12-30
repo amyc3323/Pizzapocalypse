@@ -8,30 +8,48 @@ using UnityEngine.SceneManagement;
 public enum TutorialState
 {
     Joystick,
-    Boost,
     Drift,
-    Pizza,
+    Boost,
+    Delivery,
+    Throw,
+    PizzaCount,
     Zombie,
-    Delivery
+    Timer,
 }
 
 [System.Serializable]
-public class UIObjectGroup
+public class ObjectGroup
 {
-    public GameObject[] UIObjects;
+    public GameObject[] gameObjects;
 }
 
 public class TutorialManager : MonoBehaviour
 {
     public static TutorialManager instance;
+    GameManager gameManager;
     public TutorialState state;
-    public UIObjectGroup[] toActivate; // each index corresponds to the enum index
+    public ObjectGroup[] toActivate; // each index corresponds to the enum index
+    public GameObject[] objectToActivate;
     public Pizza testPizza;
     public GameObject zombieInScene;
     public TextMeshProUGUI tutorialText;
     // 77 units per 4 lines
     // 15.4 as the margin
     public RectTransform textBackground;
+    PlayerScript player;
+    Rigidbody2D playerRB;
+    Vector3 originPos;
+
+    //advancement values
+    [SerializeField] float sqrDistanceThreshold;
+    [SerializeField] float timeToDrift;
+    [SerializeField] float driftTimeLimit;
+    float driftTime;
+    [SerializeField] float timeToDelivery;
+    public int throwDeliveries;
+    int initialDeliveryCount;
+    [SerializeField] int minKillCount;
+    public int killCount;
 
     private void Awake()
     {
@@ -41,24 +59,123 @@ public class TutorialManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.instance.pizzaAmount = 0;
+        gameManager = GameManager.instance;
+        gameManager.pizzaAmount = 0;
         state = TutorialState.Joystick;
+        player = PlayerScript.instance;
+        playerRB.GetComponent<Rigidbody2D>();
+        originPos = player.transform.position;
+        driftTime = 0f;
+        throwDeliveries = 0;
+        killCount = 0;
+    }
+
+    IEnumerator SetStateToDrift()
+    {
+        yield return new WaitForSeconds(timeToDrift);
+        IncrementState(TutorialState.Drift);
+    }
+
+    IEnumerator SetStateToDelivery()
+    {
+        yield return new WaitForSeconds(timeToDelivery);
+        IncrementState(TutorialState.Delivery);
+        gameManager.pizzaAmount = 99;
+    }
+
+    void IncrementState(TutorialState newState)
+    {
+        if ((int)state == (int)newState - 1)
+        {
+            state++;
+        } 
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerScript player = PlayerScript.instance;
-        foreach (GameObject i in toActivate[(int)state].UIObjects)
+        
+        foreach (GameObject i in toActivate[(int)state].gameObjects)
         {
             i.SetActive(true);
         }
-        //based on tutorial text, set dimension
 
-        if (GameManager.instance.DeliveryTimeRatio() < 0.2f)
-            GameManager.instance.ResetDeliveryTime();
+
+        switch (state)
+        {
+            case TutorialState.Joystick:
+                if ((player.transform.position - originPos).sqrMagnitude > sqrDistanceThreshold)
+                {
+                    StartCoroutine(SetStateToDrift());
+                }
+                return;
+            case TutorialState.Drift:
+                //player has to drift for a set amount of time to progress
+                if (!player.isDrifting)
+                {
+                    driftTime = 0;
+                }
+                else
+                {
+                    driftTime += Time.deltaTime;
+                }
+                if (driftTime > driftTimeLimit)
+                {
+                    IncrementState(TutorialState.Drift + 1);
+                }
+                return;
+            case TutorialState.Boost:
+                if (player.boostPressed && player.boostMeter > 0)
+                {
+                    StartCoroutine(SetStateToDelivery());
+                }
+                return;
+            case TutorialState.Delivery:
+                if (gameManager.finishedDeliveries >= 3)
+                {
+                    IncrementState(TutorialState.Delivery + 1);
+                }
+                return;
+            case TutorialState.Throw:
+                if (throwDeliveries >= 2) //This variable is updated by DeliveryTarget.cs
+                {
+                    IncrementState(TutorialState.Throw + 1);
+                    gameManager.pizzaAmount = 0;
+                    initialDeliveryCount = gameManager.finishedDeliveries;
+                }
+                return;
+            case TutorialState.PizzaCount:
+                if (gameManager.finishedDeliveries - initialDeliveryCount >= 2) //Player has to complete a certain amount of new deliveries
+                {
+                    IncrementState(TutorialState.PizzaCount + 1);
+                    initialDeliveryCount = gameManager.finishedDeliveries;
+                }
+                return;
+            case TutorialState.Zombie:
+                if (killCount >= minKillCount && gameManager.finishedDeliveries - initialDeliveryCount >= 1)
+                {
+                    IncrementState(TutorialState.Zombie + 1);
+                    initialDeliveryCount = gameManager.finishedDeliveries;
+                }
+                return;
+            case TutorialState.Timer:
+                if (gameManager.finishedDeliveries - initialDeliveryCount >= 3)
+                {
+                    //done with tutorial
+                    SceneManager.LoadScene(1);
+                }
+                return;
+        }
+
+        if (gameManager.DeliveryTimeRatio() < 0.2f)
+            gameManager.ResetDeliveryTime();
         if ((int)state > (int)TutorialState.Zombie)
-            GameManager.instance.pizzaAmount = Mathf.Clamp(GameManager.instance.pizzaAmount, 0, 99);
+            gameManager.pizzaAmount = Mathf.Clamp(gameManager.pizzaAmount, 0, 99);
+        if ((int)state < (int)TutorialState.PizzaCount) // infinite pizzas before pizza count is unlocked
+        {
+            gameManager.pizzaAmount = 5;
+        }
+        //based on tutorial text, set dimension
         textBackground.sizeDelta = new Vector2(textBackground.sizeDelta.x, (77 / 4.0f) * tutorialText.textInfo.lineCount + 15.4f);
     }
 }

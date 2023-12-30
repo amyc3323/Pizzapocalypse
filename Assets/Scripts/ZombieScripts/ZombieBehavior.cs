@@ -10,6 +10,7 @@ public class ZombieBehavior : MonoBehaviour
     [SerializeField] bool debug1, debug2;
     [SerializeField] bool debug;
     [SerializeField] bool DONOTCHECKMARKTHISVARIABLE; // this is only for tutorial level, do not mind it
+    TutorialManager tutorialManager;
 
     public Color debugColor;
     public float sqrAggroRange;
@@ -59,6 +60,7 @@ public class ZombieBehavior : MonoBehaviour
         targettingPlayer = true; // just target the player
         ResetTimeUntilMove();
         InitRayVector();
+        tutorialManager = TutorialManager.instance;
         //StartCoroutine(Growl());
     }
 
@@ -123,6 +125,10 @@ public class ZombieBehavior : MonoBehaviour
     {
         eatingPizza = false;
         aggroed = false;
+        if (tutorialManager != null)
+        {
+            tutorialManager.killCount++;
+        }
         ZombiePool.instance.ReturnToPool(gameObject);
         GlobalSoundManager.instance.playSFX(dieSounds[Random.Range(0, dieSounds.Length)], 1.5f * GlobalSoundManager.instance.sfxVolume * GlobalSoundManager.instance.globalVolume);
     }

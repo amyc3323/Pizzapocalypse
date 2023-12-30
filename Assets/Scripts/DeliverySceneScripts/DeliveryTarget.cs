@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeliveryTarget : Singleton<DeliveryTarget>
+public class DeliveryTarget : MonoBehaviour
 {
     public static DeliveryTarget instance;
     public Pizza pizzaType;
     public ParticleSystem confetti;
+    //Tutorial manager may or may not exist
+    TutorialManager tutorialManager;
 
     private void Awake()
     {
-        instance = Instance;
+        instance = this;
+    }
+
+    private void Start()
+    {
+        tutorialManager = TutorialManager.instance; // could be null
     }
 
     public void ResetDelivery(Pizza pizza)
@@ -33,8 +40,13 @@ public class DeliveryTarget : Singleton<DeliveryTarget>
     {
         Vector3 recordPos = transform.position;
         GameManager.instance.FinishThrowingDelivery(pizzaType);
+        //checks if in tutorial
+        if (tutorialManager != null)
+        {
+            tutorialManager.throwDeliveries++;
+        }
         
-            StartCoroutine(PlayConfetti(recordPos));
+        StartCoroutine(PlayConfetti(recordPos));
     }
 
     IEnumerator PlayConfetti(Vector3 position)
