@@ -15,6 +15,11 @@ public class ZombiePool : MonoBehaviour
     {
         instance = this;
 
+        InstantiateZombies();
+    }
+
+    public void InstantiateZombies()
+    {
         pool = new List<GameObject>();
         GameObject temp;
         for (int i = 0; i < poolCount; i++)

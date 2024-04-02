@@ -31,7 +31,7 @@ public class TutorialManager : MonoBehaviour
     public ObjectGroup[] toActivate; // each index corresponds to the enum index
     public GameObject[] objectToActivate;
     public Pizza testPizza;
-    public GameObject zombieInScene;
+    public ZombiePool zombiePool;
     public TextMeshProUGUI tutorialText;
     // 77 units per 4 lines
     // 15.4 as the margin
@@ -59,15 +59,22 @@ public class TutorialManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        zombiePool = ZombiePool.instance;
         gameManager = GameManager.instance;
         gameManager.pizzaAmount = 0;
         state = TutorialState.Joystick;
         player = PlayerScript.instance;
-        playerRB.GetComponent<Rigidbody2D>();
+        playerRB = player.GetComponent<Rigidbody2D>();
         originPos = player.transform.position;
         driftTime = 0f;
         throwDeliveries = 0;
         killCount = 0;
+
+        //disable all those delivery locations
+        foreach (DeliveryZone i in gameManager.possibleDeliveryLocations)
+        {
+            i.DisableZone();
+        }
     }
 
     IEnumerator SetStateToDrift()
@@ -79,7 +86,15 @@ public class TutorialManager : MonoBehaviour
     IEnumerator SetStateToDelivery()
     {
         yield return new WaitForSeconds(timeToDelivery);
+        if ((int)state == (int)TutorialState.Delivery - 1) //only run if the state has not been incremented to delivery yet
+        {
+            foreach (DeliveryZone i in gameManager.possibleDeliveryLocations)
+            {
+                i.DisableZone();
+            }
+        }
         IncrementState(TutorialState.Delivery);
+        
         gameManager.pizzaAmount = 99;
     }
 
@@ -148,6 +163,9 @@ public class TutorialManager : MonoBehaviour
                 if (gameManager.finishedDeliveries - initialDeliveryCount >= 2) //Player has to complete a certain amount of new deliveries
                 {
                     IncrementState(TutorialState.PizzaCount + 1);
+                    zombiePool.poolCount = 25;
+                    zombiePool.InstantiateZombies();
+
                     initialDeliveryCount = gameManager.finishedDeliveries;
                 }
                 return;
